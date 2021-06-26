@@ -4,7 +4,7 @@ import WelcomeBanner from "./components/welcome-banner/WelcomeBanner";
 import CustomButton from "./components/button/Button";
 import Logo from "./img/logo.svg";
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App-header">

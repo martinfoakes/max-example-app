@@ -7,7 +7,7 @@ interface ButtonProps {
   iconSrc?: string;
 }
 
-const CustomButton = ({ text, iconSrc }: ButtonProps) => {
+const CustomButton = ({ text, iconSrc }: ButtonProps): JSX.Element => {
   return (
     <button
       onClick={() => window.alert("Button Clicked!")}
