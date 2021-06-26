@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import WelcomeBanner from "./components/welcome-banner/WelcomeBanner";
+import CustomButton from "./components/button/Button";
+import Logo from "./img/logo.svg";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <WelcomeBanner />
       </header>
+      <section style={{ display: "flex", flexDirection: "column" }}>
+        <h3>{"Some string on the main App page"}</h3>
+        <CustomButton text="Button text" iconSrc={Logo} />
+      </section>
     </div>
   );
-}
+};
 
 export default App;

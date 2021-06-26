@@ -1,0 +1,7 @@
+.welcome-banner-container {
+  display: inline-flex;
+}
+
+.welcome-banner-container > h1 {
+  color: #ddffd5;
+}
